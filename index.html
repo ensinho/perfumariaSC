@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florianópolis Essências - Proposta de Parceria Estratégica</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +20,7 @@
             background-image: url('https://mercadoeconsumo.com.br/wp-content/uploads/2022/10/Mahogany-Foto-Boutique-Barra-Shopping-RJ-Mesa-de-Experimentacao-Perfume-Bar-Plano-Fechado.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Parallax effect */
+            background-attachment: fixed;
         }
     </style>
 </head>
@@ -30,12 +29,12 @@
     <!-- Header & Navigation -->
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-800">Florianópolis Essências</a>
-            <ul class="flex items-center space-x-6">
-                <li><a href="#about" class="hover:text-indigo-600 transition-colors">Sobre Nós</a></li>
-                <li><a href="#focus" class="hover:text-indigo-600 transition-colors">Interesses</a></li>
-                <li><a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-transform transform hover:scale-105">Seja um Parceiro</a></li>
-            </ul>
+            <a href="#" class="text-xl md:text-2xl font-bold text-gray-800">Florianópolis Essências</a>
+            <div class="flex items-center space-x-6">
+                <a href="#about" class="hidden md:block hover:text-indigo-600 transition-colors">Sobre Nós</a>
+                <a href="#focus" class="hidden md:block hover:text-indigo-600 transition-colors">Interesses</a>
+                <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-transform transform hover:scale-105">Seja um Parceiro</a>
+            </div>
         </nav>
     </header>
 
@@ -53,98 +52,54 @@
         <div class="container mx-auto px-6 py-16 md:py-24">
             
             <!-- Introduction Section -->
-            <section id="about" class="text-center max-w-4xl mx-auto">
+            <section id="about" class="text-center max-w-4xl mx-auto scroll-mt-20">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Uma Nova Experiência em Perfumaria</h2>
                 <p class="text-lg text-gray-600 leading-relaxed">
                     A <span class="font-semibold text-indigo-700">Florianópolis Essências</span> nasce do desejo de criar um destino único para amantes de fragrâncias na capital catarinense. Nossa futura boutique, localizada em um ponto estratégico de Florianópolis, será um oásis de sofisticação, oferecendo uma curadoria exclusiva de perfumes e produtos aromáticos. Buscamos parcerias estratégicas com fornecedores que compartilham nossa paixão pela qualidade e pela arte da perfumaria para construir um negócio de sucesso duradouro.
                 </p>
             </section>
 
-            <!-- Benefits Section -->
-            <!-- <section id="benefits" class="py-16 md:py-24">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-800">Por que ser nosso Parceiro Estratégico?</h2>
-                    <p class="mt-2 text-lg text-gray-600 max-w-2xl mx-auto">Oferecemos mais do que uma relação comercial; propomos uma aliança para o crescimento mútuo.</p>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8 text-center">
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-2">
-                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                            <i data-lucide="map-pin" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Acesso a um Mercado Premium</h3>
-                        <p class="text-gray-600">Posicione sua marca em um dos mercados mais promissores do Sul do Brasil, alcançando um público exigente e com alto poder aquisitivo.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-2">
-                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                           <i data-lucide="gem" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Valorização de Marca</h3>
-                        <p class="text-gray-600">Associe seus produtos a um ambiente de luxo, curadoria especializada e uma experiência de compra inesquecível para o cliente final.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow transform hover:-translate-y-2">
-                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                           <i data-lucide="trending-up" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Parceria para o Futuro</h3>
-                        <p class="text-gray-600">Buscamos relações de longo prazo, baseadas na transparência, colaboração e no objetivo comum de crescimento e liderança de mercado.</p>
-                    </div>
-                </div>
-            </section> -->
-
             <!-- What We're Looking For Section -->
-            <section id="focus" class="bg-gray-100 -mx-6 px-6 py-16 md:py-24 rounded-xl mt-8">
-                <div class="text-center mb-12 max-w-3xl mx-auto">
+            <section id="focus" class="bg-gray-100 -mx-6 px-6 py-16 md:py-24 rounded-xl mt-16 md:mt-24 scroll-mt-20">
+                <div class="text-center mb-12 max-w-3xl mx-auto ">
                     <h2 class="text-3xl font-bold text-gray-800">Nosso Foco de Interesse</h2>
-                    <p class="mt-2 text-lg text-gray-600">Procuramos fornecedores de excelência em diversas categorias para compor nosso portfólio de lançamento.</p>
+                    <p class="mt-2 text-lg text-gray-600">Procuramos fornecedores de excelência em categorias estratégicas para compor nosso portfólio de lançamento.</p>
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <div class="bg-white p-6 rounded-lg flex items-start space-x-4">
+                <!-- Updated Grid: 2 columns on medium screens and up, making cards larger -->
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg flex items-start space-x-4 hover:shadow-lg transition-shadow">
                         <i data-lucide="flask-conical" class="w-8 h-8 text-indigo-500 mt-1 flex-shrink-0"></i>
                         <div>
                             <h4 class="font-semibold text-lg">Essências e Matérias-Primas</h4>
-                            <p class="text-sm text-gray-500">Gama completa para formulações, incluindo óleos essenciais, absolutos e bases de alta qualidade.</p>
+                            <p class="text-gray-600">Gama completa para formulações, incluindo óleos essenciais, absolutos e bases de alta qualidade.</p>
                         </div>
                     </div>
-                     <div class="bg-white p-6 rounded-lg flex items-start space-x-4">
+                     <div class="bg-white p-6 rounded-lg flex items-start space-x-4 hover:shadow-lg transition-shadow">
                         <i data-lucide="package" class="w-8 h-8 text-indigo-500 mt-1 flex-shrink-0"></i>
                         <div>
                             <h4 class="font-semibold text-lg">Produtos Finalizados</h4>
-                            <p class="text-sm text-gray-500">Perfumes, colônias e body splashes de marcas de nicho e estabelecidas com apelo premium.</p>
+                            <p class="text-gray-600">Perfumes, colônias e body splashes de marcas de nicho e estabelecidas com apelo premium.</p>
                         </div>
                     </div>
-                     <div class="bg-white p-6 rounded-lg flex items-start space-x-4">
-                        <i data-lucide="home" class="w-8 h-8 text-indigo-500 mt-1 flex-shrink-0"></i>
-                        <div>
-                            <h4 class="font-semibold text-lg">Aromatizadores de Ambiente</h4>
-                            <p class="text-sm text-gray-500">Difusores, velas perfumadas e sprays de ambiente com fragrâncias sofisticadas e design elegante.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg flex items-start space-x-4">
-                        <i data-lucide="sparkles" class="w-8 h-8 text-indigo-500 mt-1 flex-shrink-0"></i>
-                        <div>
-                            <h4 class="font-semibold text-lg">Linhas de Cuidado Pessoal</h4>
-                            <p class="text-sm text-gray-500">Loções hidratantes, sabonetes e óleos corporais perfumados que complementem nossa oferta principal.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg flex items-start space-x-4">
+                    <div class="bg-white p-6 rounded-lg flex items-start space-x-4 hover:shadow-lg transition-shadow">
                         <i data-lucide="box" class="w-8 h-8 text-indigo-500 mt-1 flex-shrink-0"></i>
                         <div>
                             <h4 class="font-semibold text-lg">Embalagens de Luxo</h4>
-                            <p class="text-sm text-gray-500">Frascos, válvulas e caixas com design diferenciado para a criação de uma linha própria no futuro.</p>
+                            <p class="text-gray-600">Frascos, válvulas e caixas com design diferenciado para a criação de uma linha própria no futuro.</p>
                         </div>
                     </div>
-                    <div class="bg-white p-6 rounded-lg flex items-start space-x-4">
+                    <div class="bg-white p-6 rounded-lg flex items-start space-x-4 hover:shadow-lg transition-shadow">
                         <i data-lucide="handshake" class="w-8 h-8 text-indigo-500 mt-1 flex-shrink-0"></i>
                         <div>
                             <h4 class="font-semibold text-lg">Apoio Inicial</h4>
-                            <p class="text-sm text-gray-500">Abertos a negociações de condições comerciais favoráveis para o start-up do negócio.</p>
+                            <p class="text-gray-600">Abertos a negociações de condições comerciais favoráveis para o start-up do negócio.</p>
                         </div>
                     </div>
                 </div>
             </section>
             
             <!-- Contact Section -->
-            <section id="contact" class="pt-16 md:pt-24">
+            <section id="contact" class="pt-16 md:pt-24 scroll-mt-20">
                  <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 lg:flex lg:items-center lg:justify-between">
                      <div class="lg:w-1/2">
                          <h2 class="text-3xl font-bold text-gray-900">Vamos Conversar?</h2>
@@ -156,7 +111,7 @@
                             </p>
                              <p class="flex items-center text-lg">
                                 <i data-lucide="phone" class="w-6 h-6 text-indigo-600 mr-3"></i>
-                                <a href="tel:+5548999999999" class="text-gray-700">(85) 99999-9999</a>
+                                <a href="tel:+5585999999999" class="text-gray-700">(85) 99999-9999</a>
                             </p>
                              <p class="flex items-center text-lg">
                                 <i data-lucide="map-pin" class="w-6 h-6 text-indigo-600 mr-3"></i>
